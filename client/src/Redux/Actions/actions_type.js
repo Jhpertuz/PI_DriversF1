@@ -1,0 +1,7 @@
+export const GET_DRIVERS = "GET_DRIVERS"
+export const GET_DRIVER_SEARCH = "GET_DRIVERS_SEARCH"
+export const GET_DRIVER_DETAILS = "GET_DRIVER_DETAILS"
+export const GET_DRIVER_TEAMS = "GET_DRIVER_TEAMS"
+export const PAGINATE = "PAGINATE"
+export const FILTER = "FILTER"
+export const RESET = "RESET"
