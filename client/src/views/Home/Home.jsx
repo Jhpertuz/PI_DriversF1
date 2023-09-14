@@ -41,16 +41,16 @@ function Home() {
   const handlerFilterTeams = (event) => {
     event.preventDefault();
     const team = event.target.value;
-    // console.log(team);
+
     setstateTeamsFilter(team);
     dispatch(teamsFilter(team));
-    // console.log(allDrivers);
+
   };
 
   const handlerFilterApi = (event) => {
     event.preventDefault();
     const isApi = event.target.value;
-    // console.log(isApi);
+
     setstateApiFilter(isApi);
     dispatch(apiFilter(isApi));
   };

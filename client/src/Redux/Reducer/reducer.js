@@ -76,7 +76,7 @@ function rootReducer(state = initialState, action) {
       //MONTADO DEL PAGINADO
 
       if (action.payload === "init") {
-        console.log("entro a init");
+    
         return {
           ...state,
           allPages: auxiPages,
@@ -220,8 +220,7 @@ function rootReducer(state = initialState, action) {
             ? state.allDriversBackup
             : state.allDriversBackup;
           apiFilter = trueSourceData.filter((d) => d.api === true);
-          console.log("entro atrue");
-          console.log(apiFilter);
+
           return {
             ...state,
             allDrivers: apiFilter,
@@ -238,8 +237,7 @@ function rootReducer(state = initialState, action) {
             ? state.allDriversBackup
             : state.allDriversBackup;
           apiFilter = falseSourceData.filter((d) => d.api === false);
-          console.log("entro false");
-          console.log(apiFilter);
+
           return {
             ...state,
             allDrivers: apiFilter,
@@ -257,7 +255,7 @@ function rootReducer(state = initialState, action) {
       //Order con api
       if (state.filterApi) {
         if (action.payload === "A-Z") {
-          console.log("entro a az");
+
           sortedDrivers = state.apiOrDbFiltered.slice().sort((a, b) => {
             var nameA = a.forename.toLowerCase();
             var nameB = b.forename.toLowerCase();
@@ -265,7 +263,7 @@ function rootReducer(state = initialState, action) {
             return nameA.localeCompare(nameB);
           });
         } else if (action.payload === "Z-A") {
-          console.log("entro a za");
+
           sortedDrivers = state.apiOrDbFiltered.slice().sort((a, b) => {
             var nameA = a.forename.toLowerCase();
             var nameB = b.forename.toLowerCase();
@@ -286,7 +284,7 @@ function rootReducer(state = initialState, action) {
       //order con teams
       if (state.filterTeams) {
         if (action.payload === "A-Z") {
-          console.log("entro a az");
+
           sortedDrivers = state.teamsFiltered.slice().sort((a, b) => {
             var nameA = a.forename.toLowerCase();
             var nameB = b.forename.toLowerCase();
@@ -294,7 +292,7 @@ function rootReducer(state = initialState, action) {
             return nameA.localeCompare(nameB);
           });
         } else if (action.payload === "Z-A") {
-          console.log("entro a za");
+
           sortedDrivers = state.teamsFiltered.slice().sort((a, b) => {
             var nameA = a.forename.toLowerCase();
             var nameB = b.forename.toLowerCase();
@@ -314,7 +312,7 @@ function rootReducer(state = initialState, action) {
 
       // Basic order
       if (action.payload === "A-Z") {
-        console.log("entro a az");
+
         sortedDrivers = state.allDriversBackup.slice().sort((a, b) => {
           var nameA = a.forename.toLowerCase();
           var nameB = b.forename.toLowerCase();
@@ -322,7 +320,7 @@ function rootReducer(state = initialState, action) {
           return nameA.localeCompare(nameB);
         });
       } else if (action.payload === "Z-A") {
-        console.log("entro a za");
+
         sortedDrivers = state.allDriversBackup.slice().sort((a, b) => {
           var nameA = a.forename.toLowerCase();
           var nameB = b.forename.toLowerCase();

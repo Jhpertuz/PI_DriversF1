@@ -1,0 +1,36 @@
+.form-cont form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-cont form input{
+    width: 15rem;
+}
+
+.form-button{
+    margin: 2rem;
+    background-color:#d16014;
+}
+
+.form-error{
+    color: red;
+}
+
+.form-label p{
+    background-color:#d16014;
+    width: max-content;
+    padding: 5px;
+    margin: 3px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.form-info-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 60vw;
+}

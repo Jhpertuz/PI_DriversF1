@@ -40,7 +40,7 @@ export const NavBar = () => {
 
         <div className="home-button">
           <div className="homebutt" onClick={handleReset}>
-            <Link to={`/`}>
+            <Link to={`/home`}>
               <div className="home-button-box"></div>
               <img className="home-icon" src={homeIcon} />
               <div className="home-label">Inicio</div>
@@ -67,7 +67,7 @@ export const NavBar = () => {
             onKeyDown={handleKeyDown}
             placeholder="Buscar Conductor..."
           />
-          <Link to={`/`}>
+          <Link to={`/home`}>
           <div className="search-image-container" onClick={handleSearch}>
             <img className="search-img" src={seartchIcon} />
           </div>
