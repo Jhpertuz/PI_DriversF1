@@ -5,7 +5,8 @@ import {
   GET_DRIVER_TEAMS,
   PAGINATE,
   RESET,
-  FILTER,
+  FILTER_API,
+  FILTER_TEAMS,ORDER_NAME,ORDER_DATE
 } from "./actions_type";
 import axios from "axios";
 
@@ -44,6 +45,10 @@ export function getDriver(id) {
   return async function (dispatch) {
     try {
       const response = await axios.get(`http://localhost:3001/drivers/${id}`);
+
+      if (Array.isArray(response.data.teams)) {
+        response.data.teams = response.data.teams.join(' - ');
+      }
       dispatch({
         type: GET_DRIVER_DETAILS,
         payload: response.data,
@@ -80,30 +85,51 @@ export function getTeams() {
   };
 }
 
+export const teamsFilter = (team) => {
+  return {
+    type: FILTER_TEAMS,
+    payload: team,
+  }
+};
+
+
+
 //*  ---------------------------------------------------------------------------------- Extra Actions
 
-export function page(order) {
-  return function (dispatch) {
-    dispatch({
-      type: PAGINATE,
-      payload: order,
-    });
-  };
-}
-export function driversFilter(order) {
-  return function (dispatch) {
-    dispatch({
-      type: FILTER,
-      payload: order,
-    });
-  };
-}
+export const page = (order) => {
+  return {
+    type: PAGINATE,
+    payload: order,
+  }
+};
 
-export function resetDrivers() {
-  return function (dispatch) {
-    dispatch({
-      type: RESET,
-    });
-  };
-}
 
+
+export const apiFilter = (payload) => {
+  return {
+    type: FILTER_API,
+    payload: payload,
+  }
+};
+
+export const orderByDate = (order) => {
+	return {
+		type: ORDER_DATE,
+		payload: order,
+	};
+};
+
+
+export const orderByName = (order) => {
+	return {
+		type: ORDER_NAME,
+		payload: order,
+	};
+};
+
+
+export const resetDrivers = () => {
+  return {
+    type: RESET,
+  };
+};

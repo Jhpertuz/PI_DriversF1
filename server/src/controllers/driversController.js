@@ -47,6 +47,8 @@ const createDriver = async (
     nationality: newDriver.nationality,
     dob: newDriver.dob,
     teams: teamsArray,
+    api:false
+    
   };
 };
 
@@ -72,6 +74,7 @@ const getDriversapi = async () => {
         teams: teamsArray,
         image_url: backup,
         description,
+        api:true
       }
     }
 
@@ -84,6 +87,7 @@ const getDriversapi = async () => {
       teams: teamsArray,
       image_url: image.url,
       description,
+      api:true
     };
   });
   
@@ -116,6 +120,7 @@ const getDriversDB = async () => {
         nationality: d.nationality,
         dob: d.dob,
         teams: teamsArray,
+        api:false
       };
     })
   );

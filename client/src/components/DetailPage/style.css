@@ -1,0 +1,361 @@
+.detail-page,
+.detail-page * {
+  box-sizing: border-box;
+}
+.detail-page {
+  background: #ffffff;
+  width: 1366px;
+  height: 651px;
+  position: relative;
+  overflow: hidden;
+}
+.backgroundimage {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.33) 0%,
+    rgba(49, 55, 21, 1) 98.4375%
+  );
+  width: 1366px;
+  height: 651px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.info-group {
+  position: absolute;
+  inset: 0;
+}
+.description-container {
+  width: 686px;
+  height: 321px;
+  position: absolute;
+  left: calc(50% - 137px);
+  top: 312px;
+  overflow: hidden;
+}
+.rectangle-9 {
+  background: rgba(226, 249, 184, 0.9);
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #d16014;
+  border-width: 1px;
+  width: 659px;
+  height: 305px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.4);
+}
+.frame-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 20px;
+  top: 24px;
+}
+.description-title {
+  color: #000000;
+  text-align: left;
+  font: 700 italic 28px "Istok Web", sans-serif;
+  position: relative;
+  width: 561px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rectangle-10 {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #b6b3b3;
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 618px;
+  height: 204px;
+  position: relative;
+}
+.description-text {
+  color: #000000;
+  text-align: left;
+  font: 400 15px "Istok Web", sans-serif;
+  position: absolute;
+  left: 27px;
+  top: 74px;
+  width: 562px;
+  height: 154px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+  align-items: baseline;
+}
+.button-back {
+  padding: 6px 9px 6px 9px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: calc(50% - -549px);
+  top: calc(50% - 295.5px);
+  overflow: hidden;
+}
+.back-icon {
+  flex-shrink: 0;
+  width: 103px;
+  height: 114px;
+  position: relative;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.4);
+}
+.tabla-general {
+  width: 598px;
+  height: 252px;
+  position: absolute;
+  left: 576px;
+  top: 30px;
+}
+.tabla {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-2 {
+  background: rgba(226, 249, 184, 0.9);
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #d16014;
+  border-width: 1px;
+  width: 598px;
+  height: 252px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.4);
+}
+.rectangle-3 {
+  border-style: solid;
+  border-color: #7d7373;
+  border-width: 1px;
+  width: 170.99px;
+  height: 37px;
+  position: absolute;
+  left: 32.7px;
+  top: 77px;
+}
+.rectangle-5 {
+  border-style: solid;
+  border-color: #7d7373;
+  border-width: 1px;
+  width: 170.99px;
+  height: 73px;
+  position: absolute;
+  left: 32.7px;
+  top: 153px;
+}
+.rectangle-4 {
+  border-style: solid;
+  border-color: #7d7373;
+  border-width: 1px;
+  width: 170.99px;
+  height: 39px;
+  position: absolute;
+  left: 32.7px;
+  top: 114px;
+}
+.rectangle-6 {
+  border-style: solid;
+  border-color: #7d7373;
+  border-width: 1px;
+  width: 360.67px;
+  height: 37px;
+  position: absolute;
+  left: 203.69px;
+  top: 77px;
+}
+.rectangle-7 {
+  border-style: solid;
+  border-color: #7d7373;
+  border-width: 1px;
+  width: 360.67px;
+  height: 73px;
+  position: absolute;
+  left: 203.69px;
+  top: 153px;
+}
+.rectangle-8 {
+  border-style: solid;
+  border-color: #7d7373;
+  border-width: 1px;
+  width: 360.67px;
+  height: 39px;
+  position: absolute;
+  left: 203.69px;
+  top: 114px;
+}
+.texto-fijo {
+  position: absolute;
+  inset: 0;
+}
+.titulo-general {
+  color: #000000;
+  text-align: left;
+  font: 700 italic 28px "Istok Web", sans-serif;
+  position: absolute;
+  left: 32.7px;
+  top: 22px;
+  width: 369.08px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nacionalidad {
+  color: #000000;
+  text-align: left;
+  font: 700 15px "Istok Web", sans-serif;
+  position: absolute;
+  left: 42.05px;
+  top: 93px;
+  width: 122.4px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fecha-de-nacimiento {
+  color: #000000;
+  text-align: left;
+  font: 700 15px "Istok Web", sans-serif;
+  position: absolute;
+  left: 42.05px;
+  top: 131px;
+  width: 151.37px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.escuder-as {
+  color: #000000;
+  text-align: left;
+  font: 700 15px "Istok Web", sans-serif;
+  position: absolute;
+  left: 42.05px;
+  top: 187px;
+  width: 122.4px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.variables {
+  position: absolute;
+  inset: 0;
+}
+.dob {
+  color: #000000;
+  text-align: center;
+  font: 600 italic 14px "Inter", sans-serif;
+  position: absolute;
+  left: 217.71px;
+  top: 128px;
+  width: 331.7px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nationality {
+  color: #000000;
+  text-align: center;
+  font: 400 italic 20px "Inter", sans-serif;
+  position: absolute;
+  left: 209.3px;
+  top: 86px;
+  width: 352.26px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teams {
+  color: #000000;
+  text-align: center;
+  font: 400 18px "Istok Web", sans-serif;
+  position: absolute;
+  left: 213.97px;
+  top: 168px;
+  width: 342.92px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-container {
+  border-radius: 49px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 404px;
+  height: 591px;
+  position: absolute;
+  left: 84px;
+  top: 30px;
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.card-form {
+  background: rgba(226, 249, 184, 0.9);
+  border-radius: 49px;
+  border-style: solid;
+  border-color: #d16014;
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 404px;
+  height: 591px;
+  position: relative;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: absolute;
+  left: 5px;
+  top: 459px;
+}
+.name {
+  color: #000000;
+  text-align: center;
+  font: 700 32px "Istok Web", sans-serif;
+  position: relative;
+  width: 395px;
+  height: 51px;
+}
+.id {
+  color: #000000;
+  text-align: center;
+  font: 400 20px "Istok Web", sans-serif;
+  position: relative;
+  width: 395px;
+  height: 50px;
+}
+.image-profile {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #d16014;
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 325px;
+  height: 417px;
+  position: absolute;
+  left: 40px;
+  top: 20px;
+}

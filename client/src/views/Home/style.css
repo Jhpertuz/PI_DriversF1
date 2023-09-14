@@ -1,0 +1,206 @@
+.hme,
+.hme * {
+  box-sizing: border-box;
+}
+.hme {
+    background: #e2f9b8;
+    width: 1349px;
+    height: 2102px;
+    position: relative;
+    overflow: auto;
+}
+.all-components {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 38px;
+}
+.filters-and-order {
+  flex-shrink: 0;
+  width: 1349px;
+  height: 98px;
+  position: relative;
+  overflow: hidden;
+}
+.filter-order-component {
+  width: 1349px;
+  height: 98px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.order {
+  position: absolute;
+  inset: 0;
+}
+.order-box {
+    background: rgba(110, 128, 78, 0.87);
+    border-radius: 10px;
+    width: 380px;
+    height: 44px;
+    position: absolute;
+    left: 859px;
+    top: 45px;
+    overflow: hidden;
+}
+.order-by-date {
+  background: #d9d9d9;
+  height: 27px;
+  position: absolute;
+  left: 890px;
+  top: 52px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  
+}
+.order-by-name {
+    border-radius: 10px;
+    display: flex;
+    background: #d9d9d9;
+    width: 96px;
+    height: 27px;
+    position: absolute;
+    left: 1090px;
+    top: 52px;
+    justify-content: center;
+    align-items: center;
+}
+.ordenamiento {
+  color: #000000;
+  text-align: left;
+  font: 700 italic 28px "Istok Web", sans-serif;
+  position: absolute;
+  left: 950px;
+  top: 0px;
+  width: 196px;
+  height: 38px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.filters {
+  position: absolute;
+  inset: 0;
+  width: fit-content;
+}
+.filter-box {
+    background: rgba(110, 128, 78, 0.87);
+    border-radius: 10px;
+    width: 450px;
+    height: 44px;
+    position: absolute;
+    left: 46px;
+    top: 43px;
+    overflow: hidden;
+}
+.filter-by-api {
+    border-radius: 10px;
+    display: flex;
+    background: #d9d9d9;
+    width: 163px;
+    height: 27px;
+    position: absolute;
+    left: 67px;
+    top: 52px;
+    align-items: center;
+    justify-content: center;
+}
+.filter-by-teams {
+    border-radius: 10px;
+    display: flex;
+    background: #d9d9d9;
+    width: 223px;
+    height: 27px;
+    position: absolute;
+    left: 258px;
+    top: 52px;
+    align-items: center;
+    justify-content: center;
+}
+.filtrado {
+  color: #000000;
+  text-align: left;
+  font: 700 italic 28px "Istok Web", sans-serif;
+  position: absolute;
+  left: 211px;
+  top: 0px;
+  width: 106px;
+  height: 38px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.reset-button {
+  width: 242px;
+  height: 46px;
+  position: absolute;
+  left: 554px;
+  top: 42px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.clear-button-box {
+  background: #d16014;
+  border-radius: 6px;
+  width: 238px;
+  height: 46px;
+  position: absolute;
+  left: 3px;
+  top: 0px;
+}
+.clear-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+.clean-filters {
+  color: #000000;
+  text-align: left;
+  font: 400 24px "Racing Sans One", sans-serif;
+  position: absolute;
+  left: 46px;
+  top: 3px;
+  width: 195px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.paginate-box {
+    background: #e2f9b8;
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.block-container {
+    background: rgba(49, 55, 21, 0.87);
+    border-radius: 40px;
+    border-style: solid;
+    border-color: #d16014;
+    border-width: 7px;
+    flex-shrink: 0;
+    width: 1216px;
+    height: 1724px;
+    position: relative;
+    box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+.cards-container {
+    width: 1170px;
+    height: 1623px;
+    position: absolute;
+    left: 25px;
+    top: -67px;
+  
+}

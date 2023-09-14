@@ -14,7 +14,7 @@ const Cards = ({ info }) => {
           image_url={driver.image_url}
           teams={driver.teams}
         />
-      ))}
+      )).slice()}
     </div>
   );
 };

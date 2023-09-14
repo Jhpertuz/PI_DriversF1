@@ -1,10 +1,14 @@
 .cardsContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: repeat(3, 509px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: start;
+    justify-content: space-around;
+    justify-items: center;
+    margin-top: 20px;
+    
 }
 
-.home-cont{
-    text-align: center;
-}
+

@@ -5,23 +5,23 @@ import style from "./Card.module.css";
 const Card = ({ id, forename, lastname, image_url, teams }) => {
   return (
     <div className={style.cardContainer}>
-      <div className={style.cardImage}>
-        <img src={image_url} alt="Profile Picture" />
+      <div className={style.fondoProfile}>
+        <img
+          className={style.profillepicture}
+          src={image_url}
+          alt="Profile Picture"
+        />
       </div>
-
-      <div className={style.cardName}>
-        <Link to={`/details/${id}`}>
-          <h4>
-            {forename+" "+lastname}
-          </h4>
+      <div className={style.cardinfo}>
+        <div className={style.nombre}>Nombre:</div>
+        <div className={style.cardname}> {forename + " " + lastname}</div>
+        <div className={style.escuderia}>Escuderia:</div>
+        <div className={style.cardteams}>{teams.join(" |♦| ")}</div>
+        <Link to={`/detail/${id}`}>
+          <div className={style.button}>
+            <div className={style.vermas}>VER MAS</div>
+          </div>
         </Link>
-      </div>
-
-      <div className={style.cardTeams}>
-        <label>
-          <b>Escuadra:</b>
-        </label>
-        <p>{teams.join(" |♦| ")}</p>
       </div>
     </div>
   );
